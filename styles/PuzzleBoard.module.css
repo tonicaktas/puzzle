@@ -1,0 +1,6 @@
+.puzzleBoard {
+  display: grid;
+  gap: 5px;
+  margin: auto;
+  width: fit-content;
+}
