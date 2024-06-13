@@ -104,7 +104,7 @@ const Pusselbrada: React.FC<PusselbradaProps> = ({
   };
 
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="w-full md:w-2/3 lg:w-1/2">
       <div
         className="grid gap-1 mx-auto"
         style={{

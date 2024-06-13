@@ -37,9 +37,12 @@ const Hem: React.FC = () => {
               <div className="relative flex-1 px-6 pb-8 pt-8 md:px-8">
                 <h3 className="text-xl font-medium text-gray-900">Info</h3>
                 <p className="mt-4 text-base text-gray-500">
-                  För att bygga pusslet har jag använt NextJS och Tailwind för
-                  designa, samt css modules. Alla viktiga funktioner är
-                  komenterade och förklarade i koden.
+                  För att bygga pusslet har jag använt NextJS, Typescript för
+                  interface och typning. Tailwind för designa, samt custom css i
+                  css-modules. Alla viktiga funktioner är komenterade och
+                  förklarade i koden. Jag la ungäfär 4h effektiv tid att bygga
+                  det hela. Det svåraste och det som tog mig mest tid va själva
+                  click funktionen. Men det löste sig till slut.
                 </p>
               </div>
             </div>
