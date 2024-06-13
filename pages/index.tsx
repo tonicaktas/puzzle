@@ -28,10 +28,22 @@ const Hem: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-50 p-8">
       {!arSpelStartat && (
         <>
           <h1 className="text-3xl mb-6">Pussel Spel</h1>
+          <div className="grid grid-cols-1 sm:max-w-md mb-8">
+            <div className="flex flex-col rounded-2xl bg-white shadow-xl">
+              <div className="relative flex-1 px-6 pb-8 pt-8 md:px-8">
+                <h3 className="text-xl font-medium text-gray-900">Info</h3>
+                <p className="mt-4 text-base text-gray-500">
+                  För att bygga pusslet har jag använt NextJS och Tailwind för
+                  designa, samt css modules. Alla viktiga funktioner är
+                  komenterade och förklarade i koden.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="sm:mx-auto sm:w-full sm:max-w-md grid grid-cols-2 gap-4">
             <button
               onClick={hanteraOppnaModal}
@@ -41,7 +53,8 @@ const Hem: React.FC = () => {
               Starta Spel
             </button>
             <a
-              href="#"
+              href="https://github.com/tonicaktas/puzzle"
+              target="_blank"
               className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:ring-transparent h-full"
               aria-label="GitHub"
             >

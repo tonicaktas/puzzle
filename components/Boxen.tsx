@@ -11,11 +11,14 @@ interface BoxenProps {
 const Boxen: React.FC<BoxenProps> = ({ value, onClick, isEmpty }) => {
   // Apply styles based on whether the box is empty
   const BoxenStyle = isEmpty
-    ? "bg-gray-200 rounded-md border border-gray-300 flex items-center justify-center h-24 w-24 text-gray-400"
-    : "bg-indigo-600 rounded-md border border-blue-700 flex items-center justify-center h-24 w-24 text-white font-bold cursor-pointer hover:bg-blue-600";
+    ? "bg-gray-200 rounded-md border border-gray-300 flex items-center justify-center text-gray-400"
+    : "bg-indigo-600 rounded-md border border-blue-700 flex items-center justify-center text-white font-bold cursor-pointer hover:bg-blue-600";
 
   return (
-    <div className={BoxenStyle} onClick={onClick}>
+    <div
+      className={`${BoxenStyle} aspect-square w-full h-full transition-all duration-200`}
+      onClick={onClick}
+    >
       {value}
     </div>
   );

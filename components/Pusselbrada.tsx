@@ -104,12 +104,14 @@ const Pusselbrada: React.FC<PusselbradaProps> = ({
   };
 
   return (
-    <div>
+    <div className="w-full lg:w-1/2">
       <div
-        className="grid gap-1"
+        className="grid gap-1 mx-auto"
         style={{
-          gridTemplateColumns: `repeat(${antalKolumner}, 100px)`,
-          gridTemplateRows: `repeat(${antalRader}, 100px)`,
+          gridTemplateColumns: `repeat(${antalKolumner}, minmax(0, 1fr))`,
+          gridTemplateRows: `repeat(${antalRader}, minmax(0, 1fr))`,
+          width: "100%",
+          maxWidth: "var(--grid-max-width)",
         }}
       >
         {boxar.map((box, index) => (
