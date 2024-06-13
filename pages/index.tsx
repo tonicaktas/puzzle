@@ -40,9 +40,9 @@ const Hem: React.FC = () => {
                   För att bygga pusslet har jag använt NextJS, Typescript för
                   interface och typning. Tailwind för designa, samt custom css i
                   css-modules. Alla viktiga funktioner är komenterade och
-                  förklarade i koden. Jag la ungäfär 4h effektiv tid att bygga
-                  det hela. Det svåraste och det som tog mig mest tid va själva
-                  click funktionen. Men det löste sig till slut.
+                  förklarade i koden. Jag la ungäfär 4h-5h effektiv tid att
+                  bygga det hela. Det svåraste och det som tog mig mest tid va
+                  själva click funktionen. Men det löste sig till slut.
                 </p>
               </div>
             </div>
